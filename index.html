@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/radio_material.css" rel="stylesheet">
+    <link href="FontAwesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+
+
+    
+    <!-- css fallback -->
+    <style type="text/css">
+    .nav>li>a, .nav>li>a{
+        background-color: none !important;
+        font-family: "Gotham Book", sans-serif;
+        font-size: .9em;
+
+        transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -ms-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+      }
+      .nav>li>a:focus, .nav>li>a:hover{
+        background-color: transparent !important;
+        color: #de3c24;
+      }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+	<div id="tinder"></div>
+
+	<script src="transpiled.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/navbar_transform.js"></script>
+    <script src="js/singlerange.js"></script>
+    <script src="js/ion.rangeSlider.js"></script>
+     <script type="text/javascript">
+        $(function () {
+            $("#range").ionRangeSlider({
+                hide_min_max: true,
+                keyboard: true,
+                min: 18,
+                max: 100,
+                from: 20,
+                to: 24,
+                type: 'double',
+                step: 1,
+                // prefix: "&#8369; ",
+                grid: true
+            });
+        });
+    </script>
+</body>
+</html>
